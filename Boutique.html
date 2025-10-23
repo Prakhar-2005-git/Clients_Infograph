@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* slate-900 */
+            color: #f8fafc; /* slate-50 */
+        }
+        .card {
+            background-color: #1e293b; /* slate-800 */
+            border: 1px solid #334155; /* slate-700 */
+            border-radius: 0.75rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            color: #cbd5e1; /* slate-300 */
+        }
+        .card-title svg {
+            margin-right: 0.75rem;
+            width: 28px;
+            height: 28px;
+        }
+        .list-item {
+            margin-bottom: 0.5rem;
+            color: #94a3b8; /* slate-400 */
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .list-item::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #64748b; /* slate-500 */
+        }
+        .table-custom {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table-custom th, .table-custom td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #334155; /* slate-700 */
+        }
+        .table-custom th {
+            font-weight: 600;
+            color: #cbd5e1; /* slate-300 */
+        }
+        .table-custom td {
+            color: #94a3b8; /* slate-400 */
+        }
+        .table-custom tr:last-child td {
+            border-bottom: none;
+        }
+        .workflow-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            color: #94a3b8; /* slate-400 */
+        }
+        .workflow-number {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #64748b; /* slate-500 */
+            margin-right: 1rem;
+            min-width: 30px;
+        }
+        .total-row {
+            font-weight: 700;
+            color: #f8fafc; /* slate-50 */
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-6 md:p-10">
+
+    <div class="max-w-4xl mx-auto">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-white">Project Development Plan</h1>
+            <p class="text-lg text-slate-400 mt-2">A comprehensive overview of the project strategy and estimations.</p>
+        </header>
+
+        <!-- Core Panels -->
+        <div class="card">
+            <h2 class="card-title">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-1.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25A2.25 2.25 0 015.25 3h13.5A2.25 2.25 0 0121 5.25z" /></svg>
+                Core Panels
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-3 text-slate-200">1. Customer Panel</h3>
+                    <ul class="space-y-2">
+                        <li class="list-item">Browse/filter marriage halls, planners, caterers, etc.</li>
+                        <li class="list-item">Booking system with calendar integration</li>
+                        <li class="list-item">Reviews, ratings, and wishlist</li>
+                        <li class="list-item">Multi-language support (Hindi, English, Urdu, Punjabi, etc.)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-3 text-slate-200">3. Admin Panel</h3>
+                    <ul class="space-y-2">
+                        <li class="list-item">User/vendor management</li>
+                        <li class="list-item">Content moderation (reviews, listings)</li>
+                        <li class="list-item">Analytics (traffic, engagement, revenue)</li>
+                        <li class="list-item">Payment reconciliation and dispute resolution</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Development Workflow -->
+        <div class="card">
+            <h2 class="card-title">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
+                Development Workflow
+            </h2>
+            <div>
+                <div class="workflow-item"><div class="workflow-number">1.</div><div><strong>Requirement Finalization</strong> → User flows, wireframes</div></div>
+                <div class="workflow-item"><div class="workflow-number">2.</div><div><strong>Design Phase</strong> → UI/UX mockups (Figma or Adobe XD)</div></div>
+                <div class="workflow-item"><div class="workflow-number">3.</div><div><strong>Frontend Dev</strong> → React components, routing, API integration</div></div>
+                <div class="workflow-item"><div class="workflow-number">4.</div><div><strong>Backend Dev</strong> → Django models, REST APIs, admin setup</div></div>
+                <div class="workflow-item"><div class="workflow-number">5.</div><div><strong>Integration</strong> → Connect frontend to backend</div></div>
+                <div class="workflow-item"><div class="workflow-number">6.</div><div><strong>Testing</strong> → Manual + automated (Postman, Cypress)</div></div>
+                <div class="workflow-item"><div class="workflow-number">7.</div><div><strong>Deployment</strong> → CI/CD setup, domain linking</div></div>
+                <div class="workflow-item"><div class="workflow-number">8.</div><div><strong>Feedback & Iteration</strong> → Client review and polish</div></div>
+            </div>
+        </div>
+
+        <!-- Tech Stack & Tools -->
+        <div class="card">
+            <h2 class="card-title">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 12l4.179 2.25m0 0l5.571 3 5.571-3m0 0l4.179-2.25L12 9.75l-5.571 2.25" /></svg>
+                Tech Stack & Tools
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="table-custom">
+                    <thead>
+                        <tr><th>Layer</th><th>Tools/Services</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Frontend</td><td>React.js, Redux (state), Tailwind/Material UI, React Router</td></tr>
+                        <tr><td>Backend</td><td>Django REST Framework, PostgreSQL, Celery + Redis (for async tasks)</td></tr>
+                        <tr><td>Auth</td><td>JWT or OAuth2 (Google, Facebook login)</td></tr>
+                        <tr><td>Payments</td><td>Razorpay or Stripe (for vendor subscriptions or customer bookings)</td></tr>
+                        <tr><td>Search & Filter</td><td>Algolia or ElasticSearch (for fast, faceted search)</td></tr>
+                        <tr><td>Hosting</td><td>Frontend: Vercel or Netlify<br>Backend: Render, Railway, or AWS Lightsail</td></tr>
+                        <tr><td>Domain</td><td>GoDaddy, Namecheap, or Google Domains</td></tr>
+                        <tr><td>Storage</td><td>AWS S3 or Cloudinary (for vendor images/videos)</td></tr>
+                        <tr><td>Email/SMS</td><td>SendGrid, Twilio, or Mailgun</td></tr>
+                        <tr><td>Analytics</td><td>Google Analytics, Hotjar (for heatmaps), Mixpanel (for user behavior)</td></tr>
+                        <tr><td>Admin UI</td><td>Django Admin + custom React dashboard</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- APIs You Might Need -->
+        <div class="card">
+            <h2 class="card-title">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.597.484-1.087 1.088-1.087h.001c.603 0 1.087.49 1.087 1.087v.001c0 .597-.484 1.087-1.088 1.087h-.001a1.086 1.086 0 01-1.087-1.087v.001zM4.502 6.087c0-.597.484-1.087 1.088-1.087h.001c.603 0 1.087.49 1.087 1.087v.001c0 .597-.484 1.087-1.088 1.087h-.001A1.086 1.086 0 014.502 6.087v.001zM14.25 17.913c0-.597.484-1.087 1.088-1.087h.001c.603 0 1.087.49 1.087 1.087v.001c0 .597-.484 1.087-1.088 1.087h-.001a1.086 1.086 0 01-1.087-1.087v-.001zM4.502 17.913c0-.597.484-1.087 1.088-1.087h.001c.603 0 1.087.49 1.087 1.087v.001c0 .597-.484 1.087-1.088 1.087h-.001A1.086 1.086 0 014.502 17.913v-.001zM12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25z" /></svg>
+                APIs You Might Need
+            </h2>
+            <ul class="space-y-3">
+                <li class="list-item"><strong>Location-based search:</strong> Google Places API or Mapbox</li>
+                <li class="list-item"><strong>Calendar availability:</strong> FullCalendar.js or custom Django model</li>
+                <li class="list-item"><strong>SMS/Email notifications:</strong> Twilio, SendGrid</li>
+                <li class="list-item"><strong>Payment gateway:</strong> Razorpay API</li>
+                <li class="list-item"><strong>Language translation:</strong> Google Translate API (for UI/localization)</li>
+            </ul>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Cost Estimation -->
+            <div class="card">
+                <h2 class="card-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414-.336.75-.75.75h-.75m0-1.5h.375c.621 0 1.125.504 1.125 1.125v.375m-18 0v9.125c0 .621.504 1.125 1.125 1.125h14.25c.621 0 1.125-.504 1.125-1.125V6.375m-18 0h18" /></svg>
+                    Cost Estimation
+                </h2>
+                 <h3 class="font-bold text-lg mb-3 text-slate-200">Fixed Costs</h3>
+                <div class="overflow-x-auto">
+                    <table class="table-custom">
+                        <thead>
+                            <tr><th>Item</th><th>Estimated Cost (INR)</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Domain (per year)</td><td>₹800–₹1,200</td></tr>
+                            <tr><td>Hosting (backend)</td><td>₹1,000–₹2,500/month</td></tr>
+                            <tr><td>Hosting (frontend)</td><td>Free–₹1,000/month</td></tr>
+                            <tr><td>Cloud Storage (S3)</td><td>₹500–₹1,000/month</td></tr>
+                            <tr><td>Email/SMS API</td><td>₹500–₹1,000/month</td></tr>
+                            <tr><td>Payment Gateway Setup</td><td>Free (transaction fees apply)</td></tr>
+                            <tr><td>Google Maps API</td><td>Free tier available, then pay-as-you-go</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-700 space-y-2">
+                    <p class="total-row">Total Monthly Ops Cost: ₹3,000–₹6,000</p>
+                    <p class="total-row">Initial Setup Cost: ₹5,000–₹10,000</p>
+                </div>
+            </div>
+
+            <!-- Team & Pricing -->
+            <div class="card">
+                <h2 class="card-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.5-2.228a4.5 4.5 0 00-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 001.13-1.897L16.5 7.5l-2.685-.8L10.5 13.5zM12 15a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    Team & Pricing Strategy
+                </h2>
+                <div class="mb-6">
+                    <h3 class="font-bold text-lg mb-3 text-slate-200">You have:</h3>
+                    <ul class="space-y-2">
+                       <li class="list-item">1 UI/UX Designer</li>
+                       <li class="list-item">1 Frontend Developer</li>
+                       <li class="list-item">1 Backend Developer (you)</li>
+                    </ul>
+                </div>
+                <h3 class="font-bold text-lg mb-3 text-slate-200">Suggested Pricing Model</h3>
+                <div class="overflow-x-auto">
+                    <table class="table-custom">
+                        <thead>
+                            <tr><th>Phase</th><th>Timeline</th><th>Suggested Fee (INR)</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Discovery & Planning</td><td>1 week</td><td>₹10,000</td></tr>
+                            <tr><td>Design</td><td>2 weeks</td><td>₹20,000</td></tr>
+                            <tr><td>Development</td><td>4–6 weeks</td><td>₹60,000–₹90,000</td></tr>
+                            <tr><td>Testing & Launch</td><td>1 week</td><td>₹10,000</td></tr>
+                            <tr><td>Maintenance (optional)</td><td>Monthly</td><td>₹5,000–₹10,000/month</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-700">
+                    <p class="total-row">Total Project Fee: ₹1,00,000–₹1,30,000</p>
+                    <p class="text-sm text-slate-400 mt-2">You can adjust based on client budget, scope, and future support.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bonus Tips -->
+        <div class="card">
+            <h2 class="card-title">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.311a15.045 15.045 0 01-7.5 0C4.508 19.654 2.25 16.182 2.25 12c0-4.182 2.258-7.654 5.25-9.471m6 18.942c2.992-.743 5.25-3.215 5.25-6.471 0-4.182-2.258-7.654-5.25-9.471m0 18.942a15.045 15.045 0 01-7.5 0" /></svg>
+                Bonus Tips
+            </h2>
+            <ul class="space-y-3">
+                <li class="list-item">Use Airtable or Notion to track vendor onboarding and content.</li>
+                <li class="list-item">Consider building a vendor verification system (KYC).</li>
+                <li class="list-item">Add WhatsApp integration for quick customer-vendor chat.</li>
+                <li class="list-item">Offer tiered vendor plans (Free, Premium, Featured).</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
